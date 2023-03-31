@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  #nubexDiv {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+  }
+  #nubexVideo {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  /* Стиль для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    /* Помещаем навигационное меню на новую строку */
+    .header-menu {
+      display: block;
+      margin-top: 20px;
+    }
+    /* Уменьшаем размер шрифта в заголовках секций */
+    h2 {
+      font-size: 24px;
+    }
+    /* Уменьшаем отступы между элементами списка */
+    ul {
+      margin-bottom: 10px;
+    }
+    /* Убираем фон у элемента списка */
+    li {
+      background-color: transparent;
+    }
+    /* Уменьшаем размер шрифта в текстовых блоках */
+    .text-container, .text-container2 {
+      font-size: 16px;
+    }
+  }
+  
